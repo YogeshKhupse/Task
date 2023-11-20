@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Task4</title>
+</head>
+<body>
+    
+    <h3>Registration Form</h3>
+    <form action="login.html">
+        <fieldset>
+            <legend>Personal Information </legend>
+        <label>Name:* <input type="text" placeholder="Enter Your Name" required autofocus pattern="[a-zA-Z][^%#]{3,}"></label><br><br>
+        <label>Mobile No:* <input type="" maxlength="10" size="10" required placeholder="Enter Ypur Mobile No"></label><br><br>
+        <label>Mail ID:* <input type="email" required placeholder="Enter Your Mail ID"></label><br><br>
+        <label>Favourite Game: <select>
+            <option value="None">None</option>
+            <option value="Cricket">Cricket</option>
+            <option value="Football">Football</option>
+            <option value="Hockey">Hockey</option>
+            <option value="Badminton">Badminton</option>
+            <option value="Kho-Kho">Kho-Kho</option>       
+        </select>
+    </label><br><br>
+    <label>Country:*
+        <select required>
+            <option value="0">None</option>
+            <option value="1">India</option>
+            <option value="2">Australia</option>
+            <option value="3">Bangladesh</option>
+            <option value="4">England</option>
+            <option value="5">South Africa</option>
+            <option value="6">New Zeland</option>
+            <option value="7">Zimbawe</option>
+            <option value="8">Netherland</option>
+            <option value="9">Afghanistan</option>
+            <option value="10">Sri Lanka</option>
+
+        </select>
+    </label><br><br>
+    Gender:*
+       <label for="male">Male</label>
+       <input type="radio" name="stat" id="male">
+       <label for="female">Female</label>
+       <input type="radio" name="stat" id="female"><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Job Information</legend>
+        <label>Company: <input type="text" placeholder="Company Name"></label><br><br>
+        <label>Company GST No: <input type="number" maxlength="12" placeholder="GST NO"></label><br><br>
+        <label>Company Address: <input type="text" placeholder="Address"></label><br><br>
+        <label>Country: <input type="text" placeholder="Country Name"></label>
+    </fieldset>
+    <input type="submit">
+
+
+    
+        
+    </form>
+    
+</body>
+</html>
