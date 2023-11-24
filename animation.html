@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+         div{
+            text-align: center;
+            margin-top: 250px;
+            animation-duration: 2s;
+          animation: mavetobottom 2s infinite alternate ease-in-out;
+         }
+         @keyframes mavetobottom {
+               
+                 50%{
+                    transform: translateY(10px) ;
+                 }
+              100%{
+                       transform: translateY(70px);
+                 }
+         }
+         body{
+            background-color: aliceblue;
+         }
+        
+    </style>
+</head>
+<body>
+    <div> <img src="Images/neon.png" alt="" height="500px" width="500px"></div>
+</body>
+</html>
