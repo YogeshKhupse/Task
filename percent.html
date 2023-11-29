@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percntage</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="Sub_1" placeholder="English"><br>
+        <input type="text" id="Sub_2" placeholder="Marathi"><br>
+        <input type="text" id="Sub_3" placeholder="Mathematics"><br>
+        <input type="text" id="Sub_4" placeholder="Physics"><br>
+        <input type="text" id="Sub_5" placeholder="Chemistry"><br>
+        <button type="button" onclick="calculate()">Calculate</button><br>
+    </form>
+    <script>
+        function calculate() {
+        let Sub1 = document.getElementById('Sub_1').value; 
+        Sub_1 = Number.parseInt(Sub1);
+        let Sub2 = document.getElementById('Sub_2').value;
+        Sub_2 = Number.parseInt(Sub1);
+        let Sub3 = document.getElementById('Sub_3').value;
+        Sub_3 = Number.parseInt(Sub1);
+        let Sub4 = document.getElementById('Sub_4').value;
+        Sub_4 = Number.parseInt(Sub1);
+        let Sub5 = document.getElementById('Sub_5').value;
+        Sub_5 = Number.parseInt(Sub1);
+        let total = Sub_1 + Sub_2 + Sub_3 + Sub_4 + Sub_5;
+        let Percntage = (total/500*100);
+
+        if(Percntage >=85){
+            document.write('Your Grade is A', '<br>')
+        }
+        else if(Percntage >=75){
+            document.write('Your Grade is B', '<br>')
+        }
+        else if(Percntage >=65){
+            document.write('Your Grade is C', '<br>')
+        }
+        else if(Percntage >=55){
+            document.write('Your Grade is D', '<br>')
+        }
+        else if(Percntage >=45){
+            document.write('Your Grade is E', '<br>')
+        }
+
+        document.write('Total=' ,total, '<br>');
+        document.write('Percntage=' ,Percntage, '<br>');
+        document.write(Precentage);
+        console.log(total);
+    }
+   
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic</title>
+</head>
+<body>
+    <script>
+        function Smartphones(model,ram,version,base_price,GST) {
+            this.Modelname= model,
+            this.Storage = ram,
+            this.Version = version,
+            this.bas = base_price,
+            this.gst = GST,
+            this.price = function(){
+                let base = Number.parseInt(this.bas);
+                let gst = Number.parseInt(this.gst);
+                let total = (base / 100) * gst;
+                console.log(total + base);
+            };
+             
+        }
+        let android = new Smartphones('realme','4gb','lolipop',10000,100);
+        let android2 = new Smartphones('samsung','6gb','kit', 20000,600);
+        let android3 = new Smartphones('oppo', '8gb', 'oreo',30000,700);
+       
+        android3.price()
+        // document.write(android.Storage)
+    </script>
+</body>
+</html>
